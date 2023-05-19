@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>umino</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            min-height: 20vh;
+            background-color: darkblue;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <header>
+            <div id="Mysidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a>
+                <a href="#">Menu</a>
+                <a href="#">Home</a>
+                <a href="#">Shop</a>
+                <a href="#">Product</a>
+                <a href="#">Blog</a>
+                <a href="#">Page</a>
+                <a href="#">By Uminol</a>
+            </div><span style="font-size:30px;cursor:pointer" onclick="openNav()"> open</span>
+            <div class="logo"><img src="logo_e.webp" alt=""></div>
+            
+        </header>
+    </div>
+    
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+
+</html>

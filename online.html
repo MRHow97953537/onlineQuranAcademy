@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@300&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .top-header {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        height: 5vh;
+        align-items: center;
+        border: 1px dashed lightpink;
+
+    }
+
+    .text {
+        margin-left: 10px;
+        color: cornsilk;
+    }
+
+    .icon {
+        display: flex;
+        align-items: center;
+        margin-right: 30px;
+        color: darkgoldenrod;
+    }
+
+    .icon i {
+        margin: 10px 12px;
+    }
+
+    .header {
+        background-color: #706a6af7;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar ul {
+        display: flex;
+
+    }
+
+    ul li {
+        display: flex;
+        margin: 6px 24px;
+        color: lightyellow;
+
+    }
+
+    ul li a {
+        color: yellow;
+        text-decoration: none;
+        font-style: normal;
+    }
+
+    ul li a:hover {
+        color: white;
+        text-decoration: overline;
+    }
+
+    .btn {
+        padding: 10px 46px;
+
+
+
+    }
+
+    .btn button {
+        background-color: #706a6af7;
+        color: darkgoldenrod;
+        border: 2px solid lightpink;
+        height: 6vh;
+        width: 10vw;
+        border-radius: 20px;
+    }
+
+    .btn button:hover {
+        background-color: #3A7C6B;
+        color: white;
+        transition: 2s ease-in-out;
+
+    }
+
+    .sliderimg {
+        background-image: url(pexels-thirdman-7957076.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 70px 4px;
+    }
+
+    .sliderimg h1 {
+        color: darkgoldenrod;
+        font-family: 'Dancing Script', cursive;
+        padding: 60px 45px;
+        width: 63%;
+        font-size: 56px;
+    }
+
+    .sliderimg p {
+        margin: -46px 46px;
+        font-size: 34px;
+        color: lightyellow;
+    }
+
+    .btn2 {
+        padding: 90px 10px;
+    }
+
+    .btn2 button:hover {
+        background-color: #3A7C6B;
+        color: white;
+        transition: 3s ease-in-out;
+    }
+
+    .btn2 button {
+        background-color: darkgoldenrod;
+        color: white;
+        height: 8vh;
+        border-radius: 25px;
+        width: 13vw;
+
+    }
+
+    #box {
+        border: 2px solid yellow;
+        background-color: #3A7C6B;
+        width: 30%;
+        position: absolute;
+        margin: -240px 14px;
+        height: 30vh;
+    }
+
+    #box h1 {
+        font-family: 'Dancing Script', cursive;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 32px;
+        position: absolute;
+        margin-top: -80px;
+        margin-left: 103px;
+        color: white;
+    }
+    .box{
+        background-image: url(th\ \(5\).jpg);
+    }
+    .WEB{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 38px 12px;
+    gap: 7px
+    }
+    .podt-1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .imgbox{
+        border: 2px solid yellow;
+        background-color: #3A7C6B ;
+        width: 40%;
+        height: 30vh;
+        border-radius: 30px;
+    }
+    .imgbox img {
+        height: 70px;
+        padding: 8px 4px;
+    }
+    .imgbox h1{
+        color: white;
+    position: absolute;
+    margin: -60px 58px;
+    font-size: 24px;
+    }
+    .imgbox p{
+        position: absolute;
+        margin: -2px 57px;
+        color: cornsilk;
+    }
+    .text3{
+        display: flex;
+        justify-content: center;
+        margin-top: 14px;
+    }
+    .text3 h1{
+        border: 1px solid black;
+        color: #3A7C6B;
+        font-family: 'Dancing Script', cursive;
+    }
+    .imgboxp {
+        border: 1px solid grey;
+        box-shadow: 0px 17px 35px -10px wheat;
+        border-radius: 10px;
+        margin: 38px 0px;
+        width: 31vw;
+        font-size: 15px;
+        overflow: hidden;
+        
+        
+       
+    }
+     .logo img{
+        color: green;
+    }
+.imgboxp img{
+    height: 365px;
+    width: 30.6vw;
+    transition: transform 2s;
+}
+.imgboxp:hover img{
+    transform: scale(1.2);
+    
+
+}
+.imgboxp h1{
+    color: darkgoldenrod;
+    font-family: 'Dancing Script', cursive;
+    padding-left: 14px;
+}
+.imgboxp p{
+    margin: 6px 20px;
+}
+.text9{
+display: flex;
+justify-content: center;
+margin-top: -4px;
+}
+#last{
+    background-color: #3A7C6B;
+    height: 130vh;
+}
+.color{
+    
+    text-align: end;
+    height: 100vh;
+}
+.color h1{ 
+    padding: 52px 155px;
+    color:yellow;
+    font-family: auto;
+}
+.img0 img{
+    display: block;
+    position: absolute;
+    margin: -470px 113px;
+    height: 85vh;
+
+}
+.color p{
+    width: 50%;
+    color:bisque;
+    line-height: 40px;
+    font-family: 'Lucida Sans', sans-serif;
+    padding: 1px 23px;
+    margin-left: 487px;
+    margin-top: -55px;
+}
+footer{
+    height: 10vh;
+    background-color: red;
+    color: whitesmoke;
+    font-size: 19px;
+    font-family:'Dancing Script', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+
+<body>
+    <header>
+        <div class="top-header">
+            <div class="text">
+                NOOR UL QURAN ONLINE ACADEMY
+            </div>
+            <div class="icon">
+                <i class="fa fa-thin fa-phone"></i>
+                <h4>+923097953537</h4>
+                <i class="fa fa-brands fa-facebook-f fa-sm"></i>
+            </div>
+        </div>
+        <div class="header">
+            <div class="logo">
+                <img src="rem.png" height="100px" width="98px" alt="">
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">COURSE</a></li>
+                    <li><a href="#">PRICING</a></li>
+                    <li><a href="#">RESOURSES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="btn">
+                <button>FREE TRIAL</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="sliderimg">
+            <h1>NOOR UL QURAN ACADEMY</h1>
+            <p>Best Quran Tutors are a step away...</p>
+            <div class="btn2">
+                <button>FREE TRIAL</button>
+            </div>
+        </div>
+        <div class="box">
+            <div class="WEB">
+                <div class="imgbox"><img src="watch.png" alt="">
+                    <h1>CLASSES AROUND<br>THE CLOCK</h1>
+                    <p>Take classes at any time<br>that suit you
+                    Lorem ipsum dolor<br>sit amet consectetur.</p>
+                </div>
+                <div class="imgbox"><img src="watch.png" alt="">
+                    <h1>CLASSES AROUND<br>THE CLOCK</h1>
+                    <p>Take classes at any time<br>that suit you Lorem ipsum dolor<br>sit amet consectetur.</p>
+                </div>
+                <div class="imgbox"><img src="watch.png" alt="">
+                    <h1>CLASSES AROUND<br>THE CLOCK</h1>
+                    <p>Take classes at any time<br>that suit you Lorem ipsum dolor<br>sit amet consectetur.</p>
+                </div>
+       </div>
+                </div>
+                <div class="text3">
+                    <hr style="display: flex; color: red; align-items: center; width: 30vw; margin-top: 19px;"/><h1>FEATURED COURSE</h1><hr style="display: flex; color: red; align-items: center; width: 30vw; margin-top: 19px;"/>
+                    
+                </div>
+                <div class="podt-1">
+                    <div class="imgboxp">
+                  <img src="Post-1.jpg" alt="">
+                  <h1>Basic Qaida for beginners</h1>
+                  <p>Arabic Qaida course is a basic course that is taught by our Quran Tutor using Arabic<div class="text9">Qaida curriculum</p>
+                    </div>
+            </div>
+                    <div class="imgboxp">
+                  <img src="Post-2.jpg" alt="">
+                  <h1>Basic Qaida for beginners</h1>
+                  <p>Arabic Qaida course is a basic course that is taught by our Quran Tutor using Arabic<div class="text9">Qaida curriculum</p>
+                    </div>
+                    </div>
+                    <div class="imgboxp">
+                  <img src="post3.jpeg" alt="">
+                  <h1>Basic Qaida for beginners</h1>
+                  <p>Arabic Qaida course is a basic course that is taught by our Quran Tutor using Arabic <div class="text9">Qaida curriculum</p>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <div class="podt-1">
+        <div class="imgboxp">
+      <img src="Post-4.jpg" alt="">
+      <h1>Basic Qaida for beginners</h1>
+      <p>Arabic Qaida course is a basic course that is taught by our Quran Tutor using Arabic<div class="text9">Qaida curriculum</p>
+        </div>
+</div>
+        <div class="imgboxp">
+      <img src="Post-5.jpg" alt="">
+      <h1>Basic Qaida for beginners</h1>
+      <p>Arabic Qaida course is a basic course that is taught by our Quran Tutor using Arabic<div class="text9">Qaida curriculum</p>
+        </div>
+        </div>
+        <div class="imgboxp">
+      <img src="basic-qaida.jpeg" alt="">
+      <h1>Basic Qaida for beginners</h1>
+      <p>Arabic Qaida course is a basic course that is taught by our Quran Tutor using Arabic <div class="text9">Qaida curriculum</p>
+        </div>
+    </div>
+</div>
+<main id="last">
+<div class="color">
+    <h1>About Us</h1>
+    <p>Ejaz ul Quran is an Online Quran Academy, providing Online Quran Classes across the globe, without any discrimination. We aim to provide the best understanding of Basic Quran Reading, Quran with Tajweed, Quran Memorization, Tafseer e Quran and Quranic Arabic on one platform with proficient, esteemed tutors of Ejaz ul Quran . To Learn Quran Online is not a problem at all in this era, where access to professional Online Quran Tutors is your one decision away Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae veritatis harum voluptatibus perferendis magnam inventore corporis at, sint maxime pariatur? Ducimus nisi laborum dolorum ex ad cumque totam repudiandae beatae asperiores inventore, quidem nobis soluta similique dignissimos fugiat reiciendis neque obcaecati facilis exercitationem! Animi nisi aliquid exercitationem laudantium, officiis et?</p>
+</div>
+    <div class="img0">
+    <img src="pexels-rdne-stock-project-7249743.jpg" alt="">
+</div>
+</main>
+<footer>
+    TAJ WEB CSS
+</footer>
+</body>
+
+</html>
